@@ -23,7 +23,7 @@ interface Handler { // rapresent an handler: the interface of an object which ca
 	String handle(int request) throws ChainException;
 }
 
-class RealHandler implements Handler { // implements the handler and manage a request, has a reference to an eventyally alternative handler (the chain)
+class RealHandler implements Handler { // implements the handler and manage a request, has a reference to an eventually ally alternative handler (the chain)
 
 	private int myLimit = 0;
 	private Handler next = null;
