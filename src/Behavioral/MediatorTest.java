@@ -65,7 +65,7 @@ class Unpleasan implements Subscriber {
     @Override
     public void notify(String message, String from) {
         if(!from.equals(this.name))
-            System.out.println(String.format("%s sto cazzo %s", message, from));
+            System.out.println(String.format("%s bad manners %s", message, from));
     }
 }
 
@@ -75,7 +75,7 @@ public class MediatorTest {
         Mediator m = new Mediator();
         User pinco = new User(m, "pinco");
         User pallino = new User(m, "pallino");
-        Unpleasan a = new Unpleasan(m, "jerk");
+        Unpleasan a = new Unpleasan(m, "Mr Bad Manners");
         pinco.send("buongiorno");
         pallino.send("heilà");
     }
